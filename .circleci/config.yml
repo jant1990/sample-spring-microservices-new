@@ -16,6 +16,4 @@ orbs:
 workflows:
   maven_test:
     jobs:
-      - maven/test # checkout, build, test, and upload test results
-      - build:
-          context: SonarCloud
+      - maven/deploy # checkout, build, test, and upload test results
